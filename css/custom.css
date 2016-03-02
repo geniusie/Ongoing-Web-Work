@@ -1,0 +1,55 @@
+.small-margin{
+    margin-right: 10px !important;
+    text-align: center;
+}
+
+p {
+	    font-size: 16px;
+}
+
+.link-dark {
+	color: #4a4a4a;
+}
+
+.link-dark:hover {
+	color: black;
+}
+
+.quote {
+	font-size: 72px;
+	position: relative;
+    top: 16px;
+}
+
+#feedback {
+    padding: 20px 0 60px;
+}
+
+#feedback .client {
+	text-align: right;
+	border: none;
+	font-size: 16px;
+}
+
+#mainslider .shop {
+	border-radius: 5px;
+	display: block;
+	background-color: #4fbafe;
+	color: white;
+	width: 240px;
+	padding: 20px 30px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#mainslider .shop:hover {
+	color: #4fbafe;
+	background-color: white;
+
+}
