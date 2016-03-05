@@ -16,13 +16,16 @@ p {
 }
 
 .quote {
-	font-size: 72px;
-	position: relative;
-    top: 16px;
+	font-size: 32px;
+	line-height: 32px;
 }
 
 #feedback {
     padding: 20px 0 60px;
+}
+
+#feedback p {
+	text-align: left;
 }
 
 #feedback .client {
@@ -53,3 +56,32 @@ p {
 	background-color: white;
 
 }
+
+#partners .item img {
+	max-height: 80px;
+}
+
+
+/*Project section*/
+#feedback .item, .project, #partners .item {
+	margin: 0 30px;
+}
+
+.project a p {
+	color: #757575;
+}
+
+.project .introtext {
+	text-align: left;
+}
+
+.project .horizontal_slider_introimg {
+	height: 300px;
+}
+
+.project .portfolio_item_image img {
+	vertical-align: middle;
+	max-height: 300px;
+}
+
+

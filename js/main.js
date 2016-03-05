@@ -20,20 +20,20 @@ jQuery(document).ready(function() {
     }
 
     //horizontal accordion
-    if (jQuery().elastislide) {
-	    jQuery('#horizontal_slider').elastislide({
-	        imageW : 370,
-	        border : 0,
-	        minItems : 1,
-	        margin : 15
-	    });
-	}
+ //    if (jQuery().elastislide) {
+	//     jQuery('#horizontal_slider').elastislide({
+	//         imageW : 370,
+	//         border : 0,
+	//         minItems : 1,
+	//         margin : 15
+	//     });
+	// }
 
 	//parallax
 	if (jQuery().parallax) {
 		jQuery('#land').parallax("50%", 0.1);
 		jQuery('#progress').parallax("50%", 0.1);
-		jQuery('#belowcontent').parallax("50%", 0.1);
+		jQuery('#project').parallax("50%", 0.1);
 		jQuery('#testimonials').parallax("50%", 0.1);
 		jQuery('#tweets').parallax("50%", 0.1);
 	}
@@ -108,17 +108,55 @@ jQuery(document).ready(function() {
 	}
 
 	//owl caousel
+	// set the images in owl carousel center vertically
+	function setImgCenter () {
+		var imageList = $(".project img");
+		var maxHeight = 0;
+		$.each(imageList, function(index, val) {
+			var height = $(val).height();
+			if (height > maxHeight) {
+			 	maxHeight = height;
+			}
+		});
+
+		$.each(imageList, function(index, val) {
+			var height = $(val).height();
+			if (height < maxHeight) {
+				var diff = (maxHeight - height)/2;
+				$(val).css('margin-top', diff);
+			}
+		});
+	}
+
 	if (jQuery().owlCarousel) {
-	    jQuery(".owl-carousel").owlCarousel({
+	    jQuery("#partners .owl-carousel").owlCarousel({
 	    	navigation : true,
 	    	navigationText : false,
-	    	pagination : false
+	    	pagination : false,
+	    	autoPlay : true
+	    });
+
+	    jQuery("#feedback .owl-carousel").owlCarousel({
+	    	navigation : true,
+	    	navigationText : false,
+	    	pagination : false,
+	    	autoPlay : true,
+	    	itemsCustom : [[0, 1]]
+	    });
+
+	    jQuery("#projects .owl-carousel").owlCarousel({
+	    	navigation : true,
+	    	navigationText : false,
+	    	pagination : false,
+	    	itemsCustom : [[0, 2], [400, 1], [800, 2], 
+	    					[1200, 3], [1600, 4], [2000, 5]],
+	    	afterInit: setImgCenter
 	    });
 
 	    jQuery(".team").owlCarousel({
 			navigation : true, // Show next and prev buttons
 			slideSpeed : 300,
-	    	navigationText : false,			
+	    	navigationText : false,
 			paginationSpeed : 400,
 			pagination: false,
 			singleItem:true

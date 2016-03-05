@@ -132,12 +132,12 @@ blockquote h3 {margin-top: 0; font-style: normal;}
 #top_slider {margin: 60px 0 80px;}
 #goal {padding: 0 0 40px;}
 #skills {padding: 20px 0 40px;}
-#belowcontent {padding: 0 0 20px;}
+#project {padding: 0 0 20px;}
 #map {height: 400px;}
 #middle {padding: 30px 0 0;}
 #donate {padding: 0 0 30px;}
 #additional {padding: 40px 0 60px;}
-#additional + #belowcontent {padding-top:0;}
+#additional + #project {padding-top:0;}
 #partners {padding: 20px 0 60px;}
 #portfolio {padding: 20px 0 0;}
 #features {padding: 0px 0 30px;}
@@ -177,7 +177,7 @@ blockquote h3 {margin-top: 0; font-style: normal;}
 
 #land {background-image: url(../img/parallax/top.jpg);}
 #progress {background-image: url(../img/parallax/progress.jpg);}
-#belowcontent {}
+#project {}
 #testimonials {background-image: url(../img/parallax/testimonials.jpg);}
 #tweets {background-image: url(../img/parallax/tweet.jpg);}
 
@@ -385,7 +385,7 @@ font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 40p
 
 #map img {max-width: inherit;}
 
-#middle h1:first-child, #belowcontent h1:first-child{margin-top: 0;}
+#middle h1:first-child, #project h1:first-child{margin-top: 0;}
 #middle div.text-center h1 {margin: 54px 0 28px;}
 #middle p + .text-center .theme_btn {margin-top: 53px;}
 aside .block + .block {margin-top: 34px;}
@@ -2475,7 +2475,7 @@ div.ppt{color:#fff;display:none;font-size:17px;z-index:9999;margin:0 0 5px 15px}
     display: inline-block;
     zoom: 1;
     *display: inline;/*IE7 life-saver */
-    font-size: 16px;
+    font-size: 32px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
