@@ -2572,6 +2572,7 @@ ul.bxslider li{}
 ===================================*/
 
 .bx-wrapper .bx-viewport {
+    /*min-height: 300px;*/
 }
 
 .bx-wrapper .bx-pager,
@@ -2724,8 +2725,8 @@ ul.bxslider li{}
 /* IMAGE CAPTIONS */
 
 .bx-wrapper .bx-caption {
-    position: fixed;
-    top:30%;
+    position: absolute;
+    top:24%;
     left: 0;
     width: 100%;
 }

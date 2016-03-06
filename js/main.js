@@ -118,6 +118,7 @@ jQuery(document).ready(function() {
 			 	maxHeight = height;
 			}
 		});
+		console.log(maxHeight);
 
 		$.each(imageList, function(index, val) {
 			var height = $(val).height();
@@ -148,9 +149,10 @@ jQuery(document).ready(function() {
 	    	navigation : true,
 	    	navigationText : false,
 	    	pagination : false,
-	    	itemsCustom : [[0, 2], [400, 1], [800, 2], 
+	    	itemsCustom : [[0, 1], [400, 1], [800, 2], 
 	    					[1200, 3], [1600, 4], [2000, 5]],
-	    	afterInit: setImgCenter
+	    	afterInit: setImgCenter,
+	    	afterUpdate: setImgCenter
 	    });
 
 	    jQuery(".team").owlCarousel({

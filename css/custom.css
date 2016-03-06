@@ -15,6 +15,32 @@ p {
 	color: black;
 }
 
+/* main slider*/
+@media (max-width: 768px){
+	#mainslider li {
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 768px){
+	#mainslider li {
+		min-height: 600px;
+	}
+}
+
+#mainslider li {
+	background-size: cover;
+	background-position: center center;
+}
+
+#mainslider .fillament {
+	background-image: url("../example/fillament-header-black.jpg");
+}
+
+#mainslider .hamilton {
+	background-image: url("../example/hamilton-night.jpg");
+}
+
 .quote {
 	font-size: 32px;
 	line-height: 32px;
@@ -76,7 +102,7 @@ p {
 }
 
 .project .horizontal_slider_introimg {
-	height: 300px;
+	max-height: 300px;
 }
 
 .project .portfolio_item_image img {
